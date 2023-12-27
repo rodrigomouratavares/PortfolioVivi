@@ -1,0 +1,1 @@
+O Quirks Mode é o modo em que o navegador adapta páginas web que estão em versões antigas para que funcionem, o que pode quebrar sua página em HTML 5. Portanto, esse modo deve ser evitado através do uso do <!DOCTYPE 7html>

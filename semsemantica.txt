@@ -1,0 +1,7 @@
+Tags sem semântica
+As tags que não possuem semântica não definem um significado para aquele texto, normalmente são utilizadas apenas para fins de separação e estilização. Veja logo abaixo a lista de algumas tags sem semântica:
+
+<div>
+<span>
+<b>
+<i>
