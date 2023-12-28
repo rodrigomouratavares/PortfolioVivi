@@ -1,5 +1,5 @@
 
- @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 
 :root{
     --cor-primaria:#254E70;
@@ -47,14 +47,14 @@ strong{
 }
 .navegacao__menu{
     display: flex;
-    gap: 80px;
+    gap: 5rem;
 }
 
 .navegacao__menu__conteudo{
     font-size:1.5rem;
     font-family: var(--fonte-secundaria);
     font-weight: 600;
-    text-decoration: none;
+    text-decoration: none;  
     color: var(--cor-primaria);
 }
 
@@ -62,17 +62,18 @@ strong{
    color: var(--cor-quaternaria);
 }
 .apresentacao{
-    padding: 2% 10%;
+    padding: 2% 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 50px;
+    gap: 3.12rem;
+    align-items: flex-start;
 
 }
 
 
 .apresentacao__conteudo{
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -138,32 +139,49 @@ strong{
 width: 45%;
 border-radius: 3em;
 }
-.foto-vivi-sobremim{
-    width: auto;
-    height: 31rem;
-    border-radius: 3em;
+.agrupar-fotos{
+   
+    max-width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
    
 }
-
+.foto-vivi-sobremim{
+    display: flex;
+    max-width:100%;
+    border-radius: 3em;
+}
 @media (max-width:900px){
 .apresentacao{
     display: flex;
     flex-direction: column-reverse;
-    padding:5%;
+    align-items: center;
 
 }
 .apresentacao__conteudo {
     width:auto;
+    display: flex;
+    align-items: center;
+
+    
 }
+
 .navegacao{
 padding: 5%;
-
+display: flex;
+align-items: center;
+justify-content: center;
 
 
 }
 .navegacao__menu{
     display: flex;
     justify-content: center;
-    
+    align-items: center;
+
+  
 }
 }
