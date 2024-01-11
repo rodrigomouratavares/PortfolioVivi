@@ -39,6 +39,10 @@ strong{
 .rede-cuca:hover {
     color: var(--cor-primaria);
 }
+.rede-cuca:active {
+    color: var(--cor-quaternaria);
+}
+
 
 .navegacao{
     
@@ -154,19 +158,20 @@ border-radius: 3em;
     max-width:100%;
     border-radius: 3em;
 }
-@media (max-width:900px){
+
+@media (max-width:768px){
 .apresentacao{
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-
+    text-align: center;
 }
 .apresentacao__conteudo {
     width:auto;
     display: flex;
     align-items: center;
+   
 
-    
 }
 
 .navegacao{
@@ -183,5 +188,9 @@ justify-content: center;
     align-items: center;
 
   
+}
+.foto-vivi-sobremim{
+    background: none;
+    background-image: none;
 }
 }
