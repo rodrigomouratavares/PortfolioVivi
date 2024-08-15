@@ -233,7 +233,7 @@ justify-content: center;
 
 .mudar-tema {
     position: absolute;
-    top: 4%;
+    top: 1%;
     margin-left: 90%;
     background-image: var(--label-icon);
     background-repeat: no-repeat;
