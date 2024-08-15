@@ -12,3 +12,20 @@ document.querySelector("#btn").addEventListener("click", () => {
     // Salvamos a preferência no localStorage
     localStorage.setItem('dark-mode', document.body.classList.contains('dark-mode'));
 });
+
+function setThemeByTime() {
+    const currentHour = new Date().getHours(); 
+    const bodyElement = document.body;
+
+    
+    if (currentHour >= 18 || currentHour < 6) {
+        bodyElement.classList.add('dark-mode');
+        bodyElement.classList.remove('');
+    } else {
+        bodyElement.classList.add('dark-mode');
+        bodyElement.classList.remove('');
+    }
+}
+
+
+window.onload = setThemeByTime;
