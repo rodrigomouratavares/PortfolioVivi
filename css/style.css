@@ -227,14 +227,14 @@ justify-content: center;
 }
 
 .mudar-tema{
-    padding: 2em 1.9em;
+    padding: 2em 2em;
     right: 1em;
     width:auto;
-    max-width: 2em;
+    max-width: 1em;
    
 }
 .moon{
-    padding: 1em 2em;
+    padding: 2em 3em;
     
 }
 }
