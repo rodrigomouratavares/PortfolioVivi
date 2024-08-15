@@ -39,6 +39,7 @@
     background-repeat: no-repeat;
     padding: 2rem;
     cursor: pointer; 
+    
   }
 h1{
     font-size: 2.5rem;
@@ -226,12 +227,14 @@ justify-content: center;
 }
 
 .mudar-tema{
-    position: absolute;
-    padding: 2em;
-    right: 0.8em;
+    padding: 2em 1.9em;
+    right: 1em;
     width:auto;
-    display: flex;
-    align-items: center;
+    max-width: 2em;
    
+}
+.moon{
+    padding: 1em 2em;
+    
 }
 }
