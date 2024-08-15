@@ -1,0 +1,237 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root{
+    --cor-primaria:#254E70;
+    --cor-secundaria:#8EE3EF;
+    --cor-terciaria:#37718E;
+    --cor-quaternaria:#AEF3E7;
+
+    --fonte-primaria:  'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+
+    --label-icon:url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png");
+}
+
+
+*{
+    padding:0;
+    margin:0;
+}
+.dark-mode {
+    --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/sol.png");
+    --cor-primaria: #0b132b;
+    --cor-secundaria:#002d67;
+    --cor-terciaria:#3a506b;
+    --cor-quaternaria:#AEF3E7;
+}
+#btn {
+    position: absolute;
+    top: 4%;
+    margin-left: 90%;
+    display: none;
+  }
+.mudar-tema {
+    position: absolute;
+    top: 4%;
+    margin-left: 90%;
+    background-image: var(--label-icon);
+    background-repeat: no-repeat;
+    padding: 2rem;
+    cursor: pointer; 
+  }
+h1{
+    font-size: 2.5rem;
+}
+
+
+body{
+
+    box-sizing: border-box;
+    color: var(--cor-primaria);
+    background-color:var(--cor-secundaria);
+    
+   
+
+}
+strong{
+    color:var(--cor-primaria);
+}
+
+.rede-cuca{
+    font-style: italic;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+.rede-cuca:hover {
+    color: var(--cor-primaria);
+}
+.rede-cuca:active {
+    color: var(--cor-quaternaria);
+}
+
+
+.navegacao{
+    
+   padding: 2% 0% 2% 5%;
+
+}
+.navegacao__menu{
+    display: flex;
+    gap: 5rem;
+}
+
+.navegacao__menu__conteudo{
+    font-size:1.5rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    text-decoration: none;  
+    color: var(--cor-primaria);
+}
+
+.navegacao__menu__conteudo:hover{
+   color: var(--cor-quaternaria);
+}
+.apresentacao{
+    padding: 2% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3.12rem;
+    align-items: flex-start;
+
+}
+
+
+.apresentacao__conteudo{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+   
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+
+    font-family:var(--fonte-primaria);
+
+
+}
+.apresentacao__conteudo__descricao{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+
+}
+
+.apresentacao_link{
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    color: var(--cor-primaria);
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.apresentacao__links__link{
+    display: flex;
+    justify-content: center;
+    gap:16px;
+    background-color:var(--cor-terciaria);
+    width: 16rem;
+    text-align: center;
+    border-radius: 3em;
+    text-decoration: none;
+    color: #F3F3F3;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 1rem;
+    font-weight: 600;
+    font-size: 1.40rem;
+    padding: 1.40rem;
+    font-family: var(--fonte-secundaria);
+}
+#instagram-imagem{
+    width: 1.80rem;
+}
+#whatsap-imagem {
+    width: 1.80rem;
+
+}
+.apresentacao__links__link:hover{
+    color:var(--cor-secundaria);
+    background-color:var(--cor-quaternaria);
+}
+
+
+
+.foto-vivi{
+width: 45%;
+border-radius: 3em;
+}
+.agrupar-fotos{
+   
+    max-width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+   
+}
+.foto-vivi-sobremim{
+    display: flex;
+    max-width:100%;
+    border-radius: 3em;
+}
+
+@media (max-width:768px){
+.apresentacao{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+}
+.apresentacao__conteudo {
+    width:auto;
+    display: flex;
+    align-items: center;
+   
+
+}
+
+.navegacao{
+padding: 5%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+.navegacao__menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  
+}
+.foto-vivi-sobremim{
+    background: none;
+    background-image: none;
+}
+
+.mudar-tema{
+    position: absolute;
+    padding: 2em;
+    right: 0.8em;
+    width:auto;
+    display: flex;
+    align-items: center;
+   
+}
+}
