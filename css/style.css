@@ -3,7 +3,7 @@
 
 :root{
     --cor-primaria:#254E70;
-    --cor-secundaria:#8EE3EF;
+    --cor-secundaria:#ffffff;
     --cor-terciaria:#37718E;
     --cor-quaternaria:#AEF3E7;
 
@@ -18,10 +18,15 @@
     padding:0;
     margin:0;
 }
+.moon {
+right: 4%;
+
+    
+}
 .dark-mode {
     --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/sol.png");
-    --cor-primaria: #0b132b;
-    --cor-secundaria:#002d67;
+    --cor-primaria: #ffffff;
+    --cor-secundaria:#000000;
     --cor-terciaria:#3a506b;
     --cor-quaternaria:#AEF3E7;
 }
@@ -226,15 +231,18 @@ justify-content: center;
     background-image: none;
 }
 
-.mudar-tema{
-    padding: 2em 2em;
-    right: 1em;
-    width:auto;
-    max-width: 1em;
-   
-}
-.moon{
-    padding: 2em 3em;
+.mudar-tema {
+    position: absolute;
+    top: 4%;
+    margin-left: 90%;
+    background-image: var(--label-icon);
+    background-repeat: no-repeat;
+      background-size: contain;
+    padding: 1rem;
+    cursor: pointer; 
+  
+
     
-}
+  }
+
 }
