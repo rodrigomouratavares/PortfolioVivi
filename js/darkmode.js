@@ -1,5 +1,3 @@
-
-
 // Checamos se o modo escuro foi ativado anteriormente e aplica a classe
 if (localStorage.getItem('dark-mode') === 'true') {
     document.body.classList.add('dark-mode');
@@ -20,9 +18,9 @@ function setThemeByTime() {
     
     if (currentHour >= 18 || currentHour < 6) {
         bodyElement.classList.add('dark-mode');
-        bodyElement.classList.remove('');
+        
     } else {
-        bodyElement.classList.add('dark-mode');
+      
         bodyElement.classList.remove('');
     }
 }
